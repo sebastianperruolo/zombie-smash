@@ -1,5 +1,10 @@
 package com.locket.challenge.game.data;
 
+/**
+ * This class represents a zombie appearance.
+ * 
+ * @author sperruolo
+ */
 public class ZombieAppearance {
 	private Coordinate location;
 	private long time;

@@ -8,9 +8,14 @@ import com.locket.challenge.game.data.TestCase;
 import com.locket.challenge.game.data.ZombieAppearance;
 import com.locket.challenge.game.play.GamePlay;
 import com.locket.challenge.game.play.GameResult;
+import com.locket.challenge.game.utils.FileTestCasesReader;
 import com.locket.challenge.game.utils.TestCaseFileException;
 import com.locket.challenge.game.utils.TestCasesReader;
 
+/**
+ * 
+ * @author sperruolo
+ */
 public class App {
 
 	/**
@@ -28,7 +33,7 @@ public class App {
 		 */
 		List<TestCase> testCases = null;
 		try {
-			TestCasesReader reader = new TestCasesReader(new File(args[0]));
+			FileTestCasesReader reader = new FileTestCasesReader(new File(args[0]));
 		
 			testCases = load(reader);
 		} catch (TestCaseFileException e) {

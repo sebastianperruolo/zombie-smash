@@ -3,6 +3,10 @@ package com.locket.challenge.game.data;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * @author sperruolo
+ */
 public class TestCase {
 	private List<ZombieAppearance> zombieAppearances = new ArrayList<ZombieAppearance>();
 	private int id;

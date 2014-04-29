@@ -4,6 +4,10 @@ import java.util.List;
 
 import com.locket.challenge.game.data.ZombieAppearance;
 
+/**
+ * 
+ * @author sperruolo
+ */
 public class GameResult {
 	private List<ZombieAppearance> zombieAppearances;
 	

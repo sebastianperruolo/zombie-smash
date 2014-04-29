@@ -9,6 +9,10 @@ import com.locket.challenge.game.data.ZombieAppearance;
 import com.locket.challenge.game.play.GamePlay;
 import com.locket.challenge.game.play.GameResult;
 
+/**
+ * 
+ * @author sperruolo
+ */
 public class GamePlayTest {
 	
 	@Test

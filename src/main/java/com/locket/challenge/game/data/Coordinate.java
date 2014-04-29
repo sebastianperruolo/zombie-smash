@@ -1,5 +1,10 @@
 package com.locket.challenge.game.data;
 
+/**
+ * This class represents a location on the game maze.
+ * 
+ * @author sperruolo
+ */
 public class Coordinate {
 	private int x;
 	private int y;

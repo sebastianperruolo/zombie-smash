@@ -5,7 +5,10 @@ import java.util.List;
 
 import com.locket.challenge.game.data.TestCase;
 import com.locket.challenge.game.data.ZombieAppearance;
-
+/**
+ * 
+ * @author sperruolo
+ */
 public class GamePlay {
 	public static GameResult play(TestCase testCase) {
 		return play(testCase.getZombieAppearances());
@@ -34,9 +37,9 @@ public class GamePlay {
 					zombieAppearance);
 			
 			//get game result for both scenarios:
-			//	1- smashing this zombie
+			//	1- Ignoring this zombie
 			GameResult resultNoSmashing = play(gameStatus, zombieAppearancesRest);
-			//	2- Ignoring this zombie
+			//	2- Smashing this zombie
 			GameResult resultSmashing = play(newGameStatus,
 					zombieAppearancesRest);
 

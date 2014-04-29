@@ -6,7 +6,10 @@ import java.util.List;
 import com.locket.challenge.game.data.Coordinate;
 import com.locket.challenge.game.data.ZombieAppearance;
 
-
+/**
+ * 
+ * @author sperruolo
+ */
 public class GameStatus {
 	private long zombieSmasherTime;
 	private Coordinate location;
