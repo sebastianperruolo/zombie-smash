@@ -71,6 +71,42 @@ public class GamePlayTest {
 	public void testExampleCustom2() {
 		List<ZombieAppearance> zombieAppearances = new ArrayList<ZombieAppearance>();
 		
+		zombieAppearances.add(new ZombieAppearance(11,0,0));
+		
+		GameResult gameResult = GamePlay.play(zombieAppearances);
+		
+		org.junit.Assert.assertEquals(0, gameResult.getSmashedZombies());
+	}
+	
+	@Test
+	public void testExampleCustom3() {
+		List<ZombieAppearance> zombieAppearances = new ArrayList<ZombieAppearance>();
+		
+		zombieAppearances.add(new ZombieAppearance(10,0,0));
+		
+		GameResult gameResult = GamePlay.play(zombieAppearances);
+		
+		org.junit.Assert.assertEquals(1, gameResult.getSmashedZombies());
+	}
+	
+	@Test
+	public void testExampleCustom4() {
+		List<ZombieAppearance> zombieAppearances = new ArrayList<ZombieAppearance>();
+		
+		//if smash this zombie first it wont reach the next two
+		zombieAppearances.add(new ZombieAppearance(10,0,0));
+		zombieAppearances.add(new ZombieAppearance(-10,0,0));
+		zombieAppearances.add(new ZombieAppearance(-20,0,1000));
+		
+		GameResult gameResult = GamePlay.play(zombieAppearances);
+		
+		org.junit.Assert.assertEquals(2, gameResult.getSmashedZombies());
+	}
+	
+	@Test
+	public void testExampleCustom5() {
+		List<ZombieAppearance> zombieAppearances = new ArrayList<ZombieAppearance>();
+		
 		zombieAppearances.add(new ZombieAppearance(1,1,1000));
 		zombieAppearances.add(new ZombieAppearance(2,2,1000));
 		zombieAppearances.add(new ZombieAppearance(3,3,1499));
