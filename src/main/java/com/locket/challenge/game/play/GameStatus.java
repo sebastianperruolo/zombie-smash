@@ -23,6 +23,15 @@ public class GameStatus {
 		this.zombiesSmashed = zombiesSmashed;
 	}
 	
+	/**
+	 * Create an instance of a clean game status:
+	 * <ul>
+	 *  <li>{@link #zombieSmasherTime} 0ms time to charge the zombie smasher.</li>
+	 *  <li>{@link #location} location is 0,0</li>
+	 *  <li>{@time} time starts at 0ms</li>
+	 *  <li>{@zombiesSmashed} list empty</li>
+	 * </ul>
+	 */
 	public GameStatus() {
 		this(0, new Coordinate(0, 0), 0, new ArrayList<ZombieAppearance>());
 	}
